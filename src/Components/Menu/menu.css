@@ -1,0 +1,62 @@
+.menu-background {
+  background: url("../../restoassets/bg-pattern.jpg");
+  width: 100%;
+  height: 100%;
+  color: white;
+}
+
+.menu-cards {
+
+  animation: fade-out 1000ms;
+  animation-fill-mode: forwards;
+
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width:970px) {
+
+
+
+  .menu-grid {
+    grid-template-columns: repeat(3, 1fr)
+  }
+
+}
+
+@media screen and (max-width:780px) {
+
+  .menu img {
+    display: none;
+  }
+
+  .menu h1 {
+    font-size: 3rem;
+  }
+
+  .menu-grid {
+    grid-template-columns: repeat(2, 1fr)
+  }
+
+}
+
+@media screen and (max-width:480px) {
+
+
+  .menu h1 {
+    font-size: 2rem;
+  }
+
+  .menu-grid {
+    grid-template-columns: repeat(1, 1fr)
+  }
+
+}

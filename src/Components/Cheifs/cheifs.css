@@ -1,0 +1,38 @@
+@-webkit-keyframes color-change-2x {
+  0% {
+    background: #000;
+  }
+  100% {
+    background: #181823;
+  }
+}
+@keyframes color-change-2x {
+  0% {
+    background: #181823;
+  }
+  100% {
+    background: #000;
+  }
+}
+.color-change-2x {
+	-webkit-animation: color-change-2x 2s linear infinite alternate both;
+	        animation: color-change-2x 2s linear infinite alternate both;
+}
+  
+
+@media screen and (max-width : 768px) {
+    .cheifs img {
+        display: none;
+    }
+
+    .cheifs h1 {
+        font-size: 3rem;
+    }
+}
+
+
+@media screen and (max-width : 480px) {
+    .cheifs h1 {
+        font-size: 2.2rem;
+    }
+}

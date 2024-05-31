@@ -1,0 +1,59 @@
+.header-section {
+    background: url("../../restoassets/bg-header.png") no-repeat;
+    background-size: cover;
+    background-position: 100%;
+    height: 100%;
+    width: 100%;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+
+}
+
+.header {
+    position: relative;
+    z-index: 10;
+}
+
+.header-section::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: black;
+    z-index: 2;
+    position: absolute;
+    opacity: 0.7;
+    left: 0;
+    top: 0;
+
+    right: 0;
+    display: none;
+
+}
+
+
+
+@media screen and (max-width :1200px) {
+    .header h1 {
+        font-size: 3.5rem;
+
+
+    }
+
+
+    .header-section::before {
+        display: block;
+    }
+
+}
+
+
+@media screen and (max-width : 480px) {
+    .header h1 {
+        font-size: 2.5rem;
+        max-width: none;
+        width: fit-content;
+    }
+}
